@@ -13,6 +13,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "@vitejs/plugin-vue": "^5.2.4",
+    "pinia": "^3.0.3",
     "tailwindcss": "^4.1.10",
     "vite": "^6.3.5"
   }
