@@ -17,6 +17,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		lib.SendJson(map[string]string{"msg": "Hello world"}, w)
 	} else {
 		log.Printf("[%s] /api/", r.Method)
-		lib.SendJson(map[string]string{"msg": "Hellow world"}, w)
+		panic("Not Found")
 	}
 }
