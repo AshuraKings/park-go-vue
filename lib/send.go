@@ -86,6 +86,8 @@ func DefaultCatch(w http.ResponseWriter) {
 			w.WriteHeader(403)
 		} else if strings.HasPrefix(msg, "bad:") {
 			w.WriteHeader(400)
+		} else if msg == "Not Found" {
+			w.WriteHeader(404)
 		} else {
 			w.WriteHeader(500)
 		}
